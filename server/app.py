@@ -3,6 +3,9 @@ from commits import has_commited
 from send_message import send_text
 from dotenv import dotenv_values
 
+print("running")
+send_text("Server running")
+
 app = Flask(__name__)
 
 @app.route('/check_commit', methods = ['POST'])
@@ -13,8 +16,10 @@ def index():
 	if has_commited():
 		return "Commited"
 	else:
-		# send_text("You haven't commited bro, get to it")
+		send_text("You haven't commited bro, get to it")
 		return "Uncommited"
+
+
 
 if __name__ == '__main__':
 	app.run(port = 5000)

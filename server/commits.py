@@ -19,5 +19,3 @@ def has_commited():
         if len(commits) != 0:
             return True
     return False
-
-print(has_commited())

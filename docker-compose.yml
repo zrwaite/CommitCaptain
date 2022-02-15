@@ -5,7 +5,7 @@ services:
     build:
       context: ./
       dockerfile: server/Dockerfile
-    image: "zrwaite/commitcaptainserver:2.0"
+    image: "zrwaite/commitcaptainserver:2.3"
     ports: 
       - "8004:5000"
   cronjobs: 
