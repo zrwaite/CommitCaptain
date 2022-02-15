@@ -1,0 +1,9 @@
+version: '1'
+services: 
+  server: 
+    env_file: "./.env"
+    build: ./
+    image: "zrwaite/commitcaptain:1.3"
+    ports: 
+      - "8004:5000"
+    
