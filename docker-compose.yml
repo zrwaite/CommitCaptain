@@ -1,21 +1,6 @@
 version: '1'
 services: 
-  server: 
-    env_file: "server/.env"
-    build:
-      context: ./
-      dockerfile: server/Dockerfile
-    image: "zrwaite/commitcaptainserver:2.3"
-    ports: 
-      - "8004:5000"
   cronjobs: 
-    env_file: "cronjobs/.env"
-    build: 
-      context: ./
-      dockerfile: cronjobs/Dockerfile
-    image: "zrwaite/commitcaptaincronjobs:2.0"
-    depends_on: 
-      - server
-    ports: 
-      - "6969:6969"
+    env_file: "./.env"
+    image: "zrwaite/commitcaptain:3.0"
     

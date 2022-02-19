@@ -1,4 +1,0 @@
-markupsafe
-python-dotenv
-twilio
-flask
