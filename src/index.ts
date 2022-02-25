@@ -3,7 +3,7 @@ import env from "dotenv";
 import {hasCommitted} from "./commits";
 import {sendText} from "./sendMessage";
 env.config()
-cron.schedule('0,30 23 * * *', () =>  {
+cron.schedule('0,30 2,3 * * *', () =>  {
 	checkCommit()
 	console.log("cron");
 });

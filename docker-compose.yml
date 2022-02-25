@@ -1,6 +1,7 @@
-version: '1'
+version: '3'
 services: 
   cronjobs: 
+    build: ./
     env_file: "./.env"
-    image: "zrwaite/commitcaptain:3.0"
+    image: "zrwaite/commitcaptain:3.1"
     
