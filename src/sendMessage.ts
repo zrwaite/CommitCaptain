@@ -5,7 +5,7 @@ env.config()
 const accountSid = process.env.TWILIO_ACCOUNT_SID || "";
 const authToken = process.env.TWILIO_AUTH_TOKEN || "";
 const fromPhone = process.env.FROM_PHONE_NUMBER || "";
-const zacPhone = process.env.ZAC_PHONE_NUMBER || "";
+const toPhone = process.env.TO_PHONE_NUMBER || "";
 
 const client = new Twilio(accountSid, authToken);
 
@@ -14,7 +14,7 @@ const sendText = (body:string) => {
 	.create({
 		body: body,
 		from: fromPhone,
-		to: zacPhone
+		to: toPhone
 	})
 	.then(message => console.log(message.sid));
 }
