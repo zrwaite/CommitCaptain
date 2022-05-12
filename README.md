@@ -5,6 +5,7 @@ Integrated with the Github API and Twilio, this will text me if I haven't commit
 ## To set it up for yourself:
 1. Set up a Github OAuth token. 
 	* see online documentation: [Github Docs](https://docs.github.com/en/developers/apps/building-oauth-apps/authorizing-oauth-apps)
+	* Use this postman and enter your information from above [Postman](https://www.getpostman.com/collections/b51a774289cf0b1bdb22)
 2. Create a Twilio account, and enable the free tier for your phone number. You only need to text yourself for this. [Twilio](https://www.twilio.com/)
 3. Create a .env file at the root of the project.
 4. Add the following Environment variables:
